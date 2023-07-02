@@ -1,4 +1,3 @@
-import "./Hero.css";
 import Nav from "./nav/Nav";
 
 function Hero() {

@@ -44,4 +44,41 @@ import Scroll_div from "../components/Scroll_div";
   </main>
 </Layout>
 
-<script></script>
+<style is:global>
+  .background {
+    background-color: #fb8c24f2;
+  }
+
+  .background > h1 {
+    font-size: clamp(3rem, 20vw, 16rem);
+  }
+  .container {
+    padding: 1rem;
+  }
+  .font-pair {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 3rem 7rem 0 7rem;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .text-wrapper > h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-wrapper > p {
+    width: 55%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+</style>
