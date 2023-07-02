@@ -1,3 +1,7 @@
-.background{
-    background-color: #FB8B24;
+.background {
+  background-color: #fb8c24f2;
+}
+
+.background > h1 {
+  font-size: clamp(3rem, 20vw, 16rem);
 }
