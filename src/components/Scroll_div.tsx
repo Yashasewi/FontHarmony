@@ -1,5 +1,4 @@
 import { colors } from "./util";
-import "./scroll.css";
 
 export default function Scroll_div() {
   return (
