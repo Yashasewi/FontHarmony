@@ -1,5 +1,5 @@
 import "./Hero.css";
-import Nav from "../nav/Nav";
+import Nav from "./nav/Nav";
 
 function Hero() {
   return (
