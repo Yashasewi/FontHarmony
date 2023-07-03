@@ -10,8 +10,48 @@ import Scroll_div from "../components/Scroll_div";
       <Hero />
     </div>
     <Scroll_div />
+  </main>
+</Layout>
 
-    <!-- <div class="min-w-[100vw]" id="font-1">1</div>
+<style is:global>
+  .background {
+    background-color: #fb8c24f2;
+  }
+
+  .background > h1 {
+    font-size: clamp(3rem, 20vw, 16rem);
+  }
+  .container {
+    padding: 1rem;
+    max-height: 100vh;
+  }
+  .font-pair {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 3rem 7rem 0 7rem;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  .text-wrapper > h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-wrapper > p {
+    width: 55%;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+</style>
+<!-- <div class="min-w-[100vw]" id="font-1">1</div>
     <div class="min-w-[100vw]" id="font-2">2</div>
     <div class="min-w-[100vw]" id="font-3">3</div>
     <div class="min-w-[100vw]" id="font-4">4</div>
@@ -41,44 +81,3 @@ import Scroll_div from "../components/Scroll_div";
     <div class="min-w-[100vw]" id="font-28">i</div>
     <div class="min-w-[100vw]" id="font-29">i</div>
     <div class="min-w-[100vw]" id="font-30">i</div> -->
-  </main>
-</Layout>
-
-<style is:global>
-  .background {
-    background-color: #fb8c24f2;
-  }
-
-  .background > h1 {
-    font-size: clamp(3rem, 20vw, 16rem);
-  }
-  .container {
-    padding: 1rem;
-  }
-  .font-pair {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-family: "Roboto Condensed", sans-serif;
-    padding: 3rem 7rem 0 7rem;
-  }
-
-  .text-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-top: 2rem;
-  }
-
-  .text-wrapper > h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-
-  .text-wrapper > p {
-    width: 55%;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-</style>
