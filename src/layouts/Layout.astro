@@ -39,4 +39,40 @@ const { title } = Astro.props;
   html {
     font-family: "League Gothic", sans-serif;
   }
+  .background {
+    background-color: #fb8c24f2;
+  }
+
+  .background > h1 {
+    font-size: clamp(3rem, 20vw, 16rem);
+  }
+  .container {
+    padding: 1rem;
+    max-height: 100vh;
+  }
+  .font-pair {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 3rem 7rem 0 7rem;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  .text-wrapper > h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-wrapper > p {
+    width: 55%;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
 </style>
