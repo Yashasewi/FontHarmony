@@ -7,77 +7,8 @@ import Scroll_div from "../components/Scroll_div";
 <Layout title="Welcome to Astro.">
   <main class="flex main overflow-y-hidden overflow-x-scroll">
     <div class="min-w-[100vw]">
-      <Hero />
+      <Hero client:load />
     </div>
-    <Scroll_div />
+    <Scroll_div client:load />
   </main>
 </Layout>
-
-<style is:global>
-  .background {
-    background-color: #fb8c24f2;
-  }
-
-  .background > h1 {
-    font-size: clamp(3rem, 20vw, 16rem);
-  }
-  .container {
-    padding: 1rem;
-    max-height: 100vh;
-  }
-  .font-pair {
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 3rem 7rem 0 7rem;
-  }
-
-  .text-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-top: 1rem;
-  }
-
-  .text-wrapper > h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-
-  .text-wrapper > p {
-    width: 55%;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
-</style>
-<!-- <div class="min-w-[100vw]" id="font-1">1</div>
-    <div class="min-w-[100vw]" id="font-2">2</div>
-    <div class="min-w-[100vw]" id="font-3">3</div>
-    <div class="min-w-[100vw]" id="font-4">4</div>
-    <div class="min-w-[100vw]" id="font-5">5</div>
-    <div class="min-w-[100vw]" id="font-6">6</div>
-    <div class="min-w-[100vw]" id="font-7">7</div>
-    <div class="min-w-[100vw]" id="font-8">8</div>
-    <div class="min-w-[100vw]" id="font-9">9</div>
-    <div class="min-w-[100vw]" id="font-10">i</div>
-    <div class="min-w-[100vw]" id="font-11">i</div>
-    <div class="min-w-[100vw]" id="font-12">i</div>
-    <div class="min-w-[100vw]" id="font-13">i</div>
-    <div class="min-w-[100vw]" id="font-14">i</div>
-    <div class="min-w-[100vw]" id="font-15">i</div>
-    <div class="min-w-[100vw]" id="font-16">i</div>
-    <div class="min-w-[100vw]" id="font-17">i</div>
-    <div class="min-w-[100vw]" id="font-18">i</div>
-    <div class="min-w-[100vw]" id="font-19">i</div>
-    <div class="min-w-[100vw]" id="font-20">i</div>
-    <div class="min-w-[100vw]" id="font-21">i</div>
-    <div class="min-w-[100vw]" id="font-22">i</div>
-    <div class="min-w-[100vw]" id="font-23">i</div>
-    <div class="min-w-[100vw]" id="font-24">i</div>
-    <div class="min-w-[100vw]" id="font-25">i</div>
-    <div class="min-w-[100vw]" id="font-26">i</div>
-    <div class="min-w-[100vw]" id="font-27">i</div>
-    <div class="min-w-[100vw]" id="font-28">i</div>
-    <div class="min-w-[100vw]" id="font-29">i</div>
-    <div class="min-w-[100vw]" id="font-30">i</div> -->
