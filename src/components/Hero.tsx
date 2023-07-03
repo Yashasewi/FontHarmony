@@ -23,7 +23,7 @@ function Hero() {
           variants={variants2}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="text-[16rem]"
         >
           FONTHARMONY
