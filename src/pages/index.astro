@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero";
 import Scroll_div from "../components/Scroll_div";
+import { motion } from "framer-motion";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -9,6 +10,7 @@ import Scroll_div from "../components/Scroll_div";
     <div class="min-w-[100vw]">
       <Hero client:load />
     </div>
+   
     <Scroll_div client:load />
   </main>
 </Layout>
