@@ -10,14 +10,13 @@ export default function Scroll_div() {
     console.log(isInView);
   }, [isInView]);
 
-  
   return (
-    <motion.div className="scroll_div min-w-[100vw] flex">
+    <div className="scroll_div  flex flex-col ">
       {colors.map((color, index) => (
         <div
-          className="min-w-[100vw] container"
+          className="h-[100vh] container "
           key={index}
-          style={{ backgroundColor: color, height: "100%" }}
+          style={{ backgroundColor: color }}
         >
           <div
             className="font-pair"
@@ -49,6 +48,6 @@ export default function Scroll_div() {
           </div>
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 }
