@@ -10,7 +10,7 @@ function Hero() {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <motion.div>
+    <motion.div className="">
       <motion.div
         variants={variants}
         initial="hidden"
@@ -55,14 +55,6 @@ function Hero() {
                 meettheipsums.com
               </a>
               . This site was inspired by{" "}
-              <a
-                className="text-fuchsia-800 hover:text-fuchsia-600"
-                href="http://hellohappy.org/beautiful-web-type/"
-                target="_blank"
-              >
-                this
-              </a>
-              ,{" "}
               <a
                 className="text-fuchsia-800 hover:text-fuchsia-600"
                 href="http://bueltge.de/free-web-font-combinations/"

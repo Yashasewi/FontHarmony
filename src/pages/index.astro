@@ -2,15 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero";
 import Scroll_div from "../components/Scroll_div";
-import { motion } from "framer-motion";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="flex main overflow-y-hidden overflow-x-scroll">
+  <main class="flex flex-col main">
     <div class="min-w-[100vw]">
       <Hero client:load />
     </div>
-   
+
     <Scroll_div client:load />
   </main>
 </Layout>
