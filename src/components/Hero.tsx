@@ -31,6 +31,10 @@ function Hero() {
         <motion.div
           style={{ fontFamily: "'Roboto Condensed', sans-serif" }}
           className=" text-xs py-10"
+          variants={variants2}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, delay: 0.8 }}
         >
           <div className="tracking-tighter">
             <p className="text-center">
