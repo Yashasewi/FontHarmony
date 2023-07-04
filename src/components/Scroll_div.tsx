@@ -1,8 +1,18 @@
 import { colors, fonts_Data } from "./util";
+import { motion, useAnimate, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Scroll_div() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+
+  
   return (
-    <div className="scroll_div min-w-[100vw] flex">
+    <motion.div className="scroll_div min-w-[100vw] flex">
       {colors.map((color, index) => (
         <div
           className="min-w-[100vw] container"
@@ -39,6 +49,6 @@ export default function Scroll_div() {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }
