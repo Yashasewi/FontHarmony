@@ -1,5 +1,6 @@
 import Nav from "./nav/Nav";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 function Hero() {
   const variants = {
     hidden: { opacity: 0, y: -100 },
@@ -9,8 +10,19 @@ function Hero() {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
-    <motion.div>
+    <motion.div className="">
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX, backgroundColor: "GhostWhite" }}
+      />
       <motion.div
         variants={variants}
         initial="hidden"
@@ -31,6 +43,10 @@ function Hero() {
         <motion.div
           style={{ fontFamily: "'Roboto Condensed', sans-serif" }}
           className=" text-xs py-10"
+          variants={variants2}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.8, delay: 0.8 }}
         >
           <div className="tracking-tighter">
             <p className="text-center">
@@ -51,14 +67,6 @@ function Hero() {
                 meettheipsums.com
               </a>
               . This site was inspired by{" "}
-              <a
-                className="text-fuchsia-800 hover:text-fuchsia-600"
-                href="http://hellohappy.org/beautiful-web-type/"
-                target="_blank"
-              >
-                this
-              </a>
-              ,{" "}
               <a
                 className="text-fuchsia-800 hover:text-fuchsia-600"
                 href="http://bueltge.de/free-web-font-combinations/"
