@@ -1,34 +1,32 @@
 export const colors = [
-  "#f94144",
-  "#f3722c",
-  "#f8961e",
-  "#f9c74f",
-  "#90be6d",
-  "#43aa8b",
-  "#4d908e",
-  "#577590",
-  "#277da1",
-  "#264653",
-  "#2a9d8f",
-  "#e9c46a",
-  "#f4a261",
-  "#e76f51",
-  "#264653",
-  "#2a9d8f",
-  "#e9c46a",
-  "#f4a261",
-  "#e76f51",
-  "#f94144",
-  "#2b2d42",
-  "#d90429",
-  "#ff5400",
-  "#ffbd69",
-  "#ffb238",
-  "#8ea604",
-  "#69d2e7",
-  "#2a363b",
-  "#f56a79",
-  "#9e0059",
+  "#f94144", // Red
+  "#f3722c", // Orange
+  "#f8961e", // Bright Orange
+  "#f9c74f", // Yellow
+  "#90be6d", // Green
+  "#43aa8b", // Teal
+  "#4d908e", // Blue-Green
+  "#577590", // Blue-Grey
+  "#277da1", // Light Blue
+  "#264653", // Dark Blue
+  "#2a9d8f", // Blue-Green
+  "#e9c46a", // Gold
+  "#f4a261", // Orange-Yellow
+  "#e76f51", // Light Red
+  "#2b2d42", // Dark Blue-Grey
+  "#d90429", // Dark Red
+  "#ff5400", // Bright Orange
+  "#ffbd69", // Peach
+  "#ffb238", // Bright Orange-Yellow
+  "#8ea604", // Olive Green
+  "#69d2e7", // Sky Blue
+  "#be42a5", // Purple
+  "#aa6da3", // Lavender
+  "#7376a0", // Greyish Blue
+  "#4d5382", // Dark Blue-Purple
+  "#363b74", // Dark Purple
+  "#e6326e", // Pink
+  "#ff6f00", // Bright Orange
 ];
 
 export const fonts_Data = [
