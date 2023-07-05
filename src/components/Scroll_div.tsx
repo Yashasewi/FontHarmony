@@ -1,21 +1,7 @@
 import { colors, fonts_Data } from "./util";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
 export default function Scroll_div() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-  const ref = useRef(null);
   return (
     <div>
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX, backgroundColor: "GhostWhite" }}
-      />
-
       <div className="scroll_div  flex flex-col ">
         {colors.map((color, index) => (
           <div
