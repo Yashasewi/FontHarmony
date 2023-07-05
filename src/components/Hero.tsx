@@ -1,5 +1,6 @@
 import Nav from "./nav/Nav";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 function Hero() {
   const variants = {
     hidden: { opacity: 0, y: -100 },
@@ -9,8 +10,19 @@ function Hero() {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
     <motion.div className="">
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX, backgroundColor: "GhostWhite" }}
+      />
       <motion.div
         variants={variants}
         initial="hidden"
